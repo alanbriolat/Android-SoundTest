@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, SoundTest!</string>
+    <string name="app_name">SoundTest</string>
+</resources>
