@@ -9,6 +9,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.util.Log;
 
+import com.pwnux.android.ToneGenerator.*;
+
 public class SoundTest extends Activity {
 	
 	private static final String TAG = "SoundTest";
@@ -20,6 +22,7 @@ public class SoundTest extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(new InputView(this));
+        
     }
     
     
@@ -30,6 +33,8 @@ public class SoundTest extends Activity {
     	
     	private float mX;
     	private float mY;
+    	
+    	private ToneGenerator mToneGen;
     	
     	public InputView(Context c) {
     		super(c);
@@ -44,6 +49,8 @@ public class SoundTest extends Activity {
     		
     		mX = 0.0f;
     		mY = 0.0f;
+    		
+    		mToneGen = new ToneGenerator(c);
     	}
     	
     	@Override
