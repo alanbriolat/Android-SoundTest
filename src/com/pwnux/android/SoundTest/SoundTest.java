@@ -3,6 +3,7 @@ package com.pwnux.android.SoundTest;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+import android.media.AudioManager;
 import android.media.AudioTrack;
 import android.graphics.*;
 import android.view.MotionEvent;
@@ -21,8 +22,8 @@ public class SoundTest extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
         setContentView(new InputView(this));
-        
     }
     
     
