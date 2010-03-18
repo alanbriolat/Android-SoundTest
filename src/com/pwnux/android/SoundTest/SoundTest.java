@@ -10,8 +10,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.util.Log;
 
-import com.pwnux.android.ToneGenerator.*;
-
 public class SoundTest extends Activity {
 	
 	private static final String TAG = "SoundTest";

@@ -1,4 +1,4 @@
-package com.pwnux.android.ToneGenerator;
+package com.pwnux.android.SoundTest;
 
 import java.io.IOException;
 import com.pwnux.android.SoundTest.R;
